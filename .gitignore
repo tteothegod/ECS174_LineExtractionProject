@@ -1,0 +1,10 @@
+# Ignore dataset and weights
+data/
+outputs/
+*.pt
+*.pth
+
+# Python / Colab cache
+__pycache__/
+*.ipynb_checkpoints/
+.DS_Store
