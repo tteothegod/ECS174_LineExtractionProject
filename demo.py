@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 from PIL import Image
 
-# import methods.canny as canny
+import methods.canny as canny
 # import methods.unet as unet
 
 st.set_page_config(layout="wide", page_title="Anime Line Art Extraction")
@@ -32,9 +32,8 @@ if uploaded_file is not None:
         
     with col2:
         st.subheader("2. Canny Edge Detection")
-        # TODO: Uncomment when Role 2 pushes canny.py
-        # mask_canny = canny.predict(color_np, resolution="full")
-        # st.image(mask_canny, clamp=True, use_container_width=True)
+        mask_canny = canny.predict(color_np, resolution="full")
+        st.image(mask_canny, clamp=True, use_container_width=True)
         st.info("Waiting for Role 2 to push `methods/canny.py`!")
         
     with col3:
