@@ -1,0 +1,4 @@
+method,resolution,split,n_images,threshold,tolerance_px,dice,iou,precision,recall,tol_precision,tol_recall,tol_f1,ms_per_image
+canny,full,test,3545,0.5,1,0.479,0.3166,0.3769,0.7029,0.7773,0.7502,0.7507,0.67
+canny,half,test,3545,0.5,1,0.3244,0.1955,0.2985,0.3755,0.6692,0.6285,0.6353,0.26
+canny,quarter,test,3545,0.5,1,0.2568,0.148,0.1969,0.3971,0.4635,0.527,0.4834,0.16
